@@ -9,10 +9,22 @@
 import UIKit
 
 class GameViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    @IBAction func playGameNavigateByCode() {
+        print("playGameNavigateByCode")
+    }
+    
+    @IBAction func playGamePerformSegueByIdentifier() {
+        print("playGamePerformSegueByIdentifier")
+    }
+    
+    @IBAction func playGameAutomaticTriggeredSegue() {
+        print("playGameAutomaticTriggeredSegue")
     }
 }
 

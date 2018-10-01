@@ -9,8 +9,17 @@
 import UIKit
 
 class ResultViewController: UIViewController {
+    
+    @IBOutlet var imageResult: UIImageView!
+    @IBOutlet var labelResult: UILabel!
+    @IBOutlet var buttonPlayAgain: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    @IBAction func playAgain() {
+        
     }
 }
