@@ -42,7 +42,7 @@ class ResultViewController: UIViewController {
                 imageResult.image = UIImage(named: Constants.imageNameRockCrushesScissors)
             }
             
-        case GameMove.scissor:
+        case GameMove.scissors:
             if (computerMove == GameMove.paper) {
                 imageResult.image = UIImage(named: Constants.imageNameScissorsCutPaper)
             } else if (computerMove == GameMove.rock) {

@@ -9,5 +9,5 @@
 enum GameMove: Int {
     case rock = 0
     case paper
-    case scissor
+    case scissors
 }

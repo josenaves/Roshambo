@@ -52,7 +52,7 @@ class GameViewController: UIViewController {
             if segue.identifier == "showGameResultSegue" {
                 userMove = GameMove.paper
             } else if segue.identifier == "autoSegue" {
-                userMove = GameMove.scissor
+                userMove = GameMove.scissors
             } else {
                 userMove = nil
             }
