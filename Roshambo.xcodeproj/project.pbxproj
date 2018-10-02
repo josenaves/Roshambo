@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		250533C42163A45F00CDA30E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250533C32163A45F00CDA30E /* Constants.swift */; };
+		250533C62163AA3E00CDA30E /* GameMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250533C52163AA3E00CDA30E /* GameMove.swift */; };
 		25919036215EA73E00E69F1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25919035215EA73E00E69F1A /* AppDelegate.swift */; };
 		25919038215EA73E00E69F1A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25919037215EA73E00E69F1A /* GameViewController.swift */; };
 		2591903B215EA73E00E69F1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25919039215EA73E00E69F1A /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		250533C32163A45F00CDA30E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		250533C52163AA3E00CDA30E /* GameMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMove.swift; sourceTree = "<group>"; };
 		25919032215EA73E00E69F1A /* Roshambo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roshambo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		25919035215EA73E00E69F1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		25919037215EA73E00E69F1A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				2591903E215EA74000E69F1A /* LaunchScreen.storyboard */,
 				25919041215EA74000E69F1A /* Info.plist */,
 				25919047215EC26400E69F1A /* ResultViewController.swift */,
+				250533C32163A45F00CDA30E /* Constants.swift */,
+				250533C52163AA3E00CDA30E /* GameMove.swift */,
 			);
 			path = Roshambo;
 			sourceTree = "<group>";
@@ -141,6 +147,8 @@
 				25919038215EA73E00E69F1A /* GameViewController.swift in Sources */,
 				25919036215EA73E00E69F1A /* AppDelegate.swift in Sources */,
 				25919048215EC26400E69F1A /* ResultViewController.swift in Sources */,
+				250533C62163AA3E00CDA30E /* GameMove.swift in Sources */,
+				250533C42163A45F00CDA30E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -56,6 +56,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <segue destination="WhW-VU-NXY" kind="show" identifier="showGameResultSegue" id="c1b-LW-JHb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -64,25 +67,25 @@
         <!--Result View Controller-->
         <scene sceneID="z3X-M6-tA1">
             <objects>
-                <viewController id="WhW-VU-NXY" customClass="ResultViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultViewController" id="WhW-VU-NXY" customClass="ResultViewController" customModule="Roshambo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vfY-je-rJA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It's a tie !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oq1-VD-vym">
-                                <rect key="frame" x="145" y="269" width="84" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's a tie !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oq1-VD-vym">
+                                <rect key="frame" x="145.5" y="322" width="84" height="23"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="itsATie" translatesAutoresizingMaskIntoConstraints="NO" id="cCZ-h5-RrX">
-                                <rect key="frame" x="67" y="98" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="itsATie" translatesAutoresizingMaskIntoConstraints="NO" id="cCZ-h5-RrX">
+                                <rect key="frame" x="96" y="56" width="183" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="uhF-mQ-rHb"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvK-xw-kwV">
-                                <rect key="frame" x="141" y="489" width="92" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvK-xw-kwV">
+                                <rect key="frame" x="133" y="491" width="109" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Play Again"/>
                                 <connections>
@@ -91,6 +94,17 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cCZ-h5-RrX" firstAttribute="top" secondItem="LVD-k6-LCW" secondAttribute="top" constant="36" id="B7L-Du-18J"/>
+                            <constraint firstItem="ZvK-xw-kwV" firstAttribute="leading" secondItem="LVD-k6-LCW" secondAttribute="leading" constant="142" id="Xhq-Xy-FHr"/>
+                            <constraint firstItem="LVD-k6-LCW" firstAttribute="bottom" secondItem="ZvK-xw-kwV" secondAttribute="bottom" constant="142" id="atq-TR-Cht"/>
+                            <constraint firstItem="oq1-VD-vym" firstAttribute="centerX" secondItem="vfY-je-rJA" secondAttribute="centerX" id="c3R-ei-Q0N"/>
+                            <constraint firstItem="cCZ-h5-RrX" firstAttribute="centerX" secondItem="vfY-je-rJA" secondAttribute="centerX" id="d16-e3-xXO"/>
+                            <constraint firstItem="oq1-VD-vym" firstAttribute="top" secondItem="cCZ-h5-RrX" secondAttribute="bottom" constant="66" id="jfc-5T-Sdx"/>
+                            <constraint firstItem="oq1-VD-vym" firstAttribute="centerX" secondItem="vfY-je-rJA" secondAttribute="centerX" id="kcn-QJ-6rd"/>
+                            <constraint firstItem="oq1-VD-vym" firstAttribute="centerY" secondItem="vfY-je-rJA" secondAttribute="centerY" id="nHa-Ib-4VC"/>
+                            <constraint firstItem="ZvK-xw-kwV" firstAttribute="centerX" secondItem="vfY-je-rJA" secondAttribute="centerX" id="vBy-Yg-aaK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="LVD-k6-LCW"/>
                     </view>
                     <connections>
@@ -100,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wy2-kC-Y1w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="908" y="27"/>
+            <point key="canvasLocation" x="1088.8" y="19.340329835082461"/>
         </scene>
     </scenes>
     <resources>
