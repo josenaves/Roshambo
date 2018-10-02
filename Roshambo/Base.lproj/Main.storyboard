@@ -44,6 +44,7 @@
                                 <state key="normal" image="scissors"/>
                                 <connections>
                                     <action selector="playGameAutomaticTriggeredSegue" destination="BYZ-38-t0r" eventType="touchUpInside" id="HZv-fQ-eQz"/>
+                                    <segue destination="WhW-VU-NXY" kind="show" identifier="autoSegue" id="Y2k-xe-FAC"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -123,4 +124,7 @@
         <image name="rock" width="75" height="65"/>
         <image name="scissors" width="75" height="65"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Y2k-xe-FAC"/>
+    </inferredMetricsTieBreakers>
 </document>

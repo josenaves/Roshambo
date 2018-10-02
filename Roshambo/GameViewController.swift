@@ -38,19 +38,31 @@ class GameViewController: UIViewController {
     
     // this will be called just before performSegue is called
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("prepare for segue")
-        if segue.identifier == "showGameResultSegue" {
-            let controller = segue.destination as! ResultViewController
+        print("prepare for segue...")
+        if segue.identifier == "showGameResultSegue" || segue.identifier == "autoSegue" {
             
+            let controller = segue.destination as! ResultViewController
             let computerMove = generateComputerPlay()
+            
+            // set the results in ResultViewController
+            controller.computerMove = computerMove
+            
+            let userMove: GameMove?
+            let result: String?
+            if segue.identifier == "showGameResultSegue" {
+                userMove = GameMove.paper
+            } else if segue.identifier == "autoSegue" {
+                userMove = GameMove.scissor
+            } else {
+                userMove = nil
+            }
 
-            let result = determineWinner(computerMove: computerMove, userMove: GameMove.paper)
-            print(result)
-
+            result = determineWinner(computerMove: computerMove, userMove: userMove!)
+            
             // set the results in ResultViewController
             controller.resultText = result
-            controller.computerMove = computerMove
-            controller.userMove = GameMove.paper
+            controller.userMove = userMove
+            print(result!)
         }
     }
     
@@ -61,8 +73,6 @@ class GameViewController: UIViewController {
     
     @IBAction func playGameAutomaticTriggeredSegue() {
         print("playGameAutomaticTriggeredSegue")
-        let computerMove = generateComputerPlay()
-        determineWinner(computerMove: computerMove, userMove: GameMove.scissor)
     }
     
     func generateComputerPlay() -> GameMove {
