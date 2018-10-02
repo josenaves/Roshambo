@@ -36,14 +36,27 @@ class GameViewController: UIViewController {
         present(controller, animated: true, completion: nil)
     }
     
+    // this will be called just before performSegue is called
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("prepare for segue")
+        if segue.identifier == "showGameResultSegue" {
+            let controller = segue.destination as! ResultViewController
+            
+            let computerMove = generateComputerPlay()
+
+            let result = determineWinner(computerMove: computerMove, userMove: GameMove.paper)
+            print(result)
+
+            // set the results in ResultViewController
+            controller.resultText = result
+            controller.computerMove = computerMove
+            controller.userMove = GameMove.paper
+        }
+    }
+    
     @IBAction func playGamePerformSegueByIdentifier() {
         print("playGamePerformSegueByIdentifier")
-        let computerMove = generateComputerPlay()
-        let result = determineWinner(computerMove: computerMove, userMove: GameMove.paper)
-        print(result)
-        
-        
-
+        performSegue(withIdentifier: "showGameResultSegue", sender: self)
     }
     
     @IBAction func playGameAutomaticTriggeredSegue() {

@@ -78,13 +78,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="itsATie" translatesAutoresizingMaskIntoConstraints="NO" id="cCZ-h5-RrX">
-                                <rect key="frame" x="96" y="56" width="183" height="200"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScissorsCutPaper" translatesAutoresizingMaskIntoConstraints="NO" id="cCZ-h5-RrX">
+                                <rect key="frame" x="-212.5" y="56" width="800" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="uhF-mQ-rHb"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvK-xw-kwV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvK-xw-kwV">
                                 <rect key="frame" x="133" y="491" width="109" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Play Again"/>
@@ -96,8 +96,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="cCZ-h5-RrX" firstAttribute="top" secondItem="LVD-k6-LCW" secondAttribute="top" constant="36" id="B7L-Du-18J"/>
-                            <constraint firstItem="ZvK-xw-kwV" firstAttribute="leading" secondItem="LVD-k6-LCW" secondAttribute="leading" constant="142" id="Xhq-Xy-FHr"/>
-                            <constraint firstItem="LVD-k6-LCW" firstAttribute="bottom" secondItem="ZvK-xw-kwV" secondAttribute="bottom" constant="142" id="atq-TR-Cht"/>
+                            <constraint firstItem="ZvK-xw-kwV" firstAttribute="leading" secondItem="LVD-k6-LCW" secondAttribute="leading" constant="133" id="Xhq-Xy-FHr"/>
+                            <constraint firstItem="LVD-k6-LCW" firstAttribute="bottom" secondItem="ZvK-xw-kwV" secondAttribute="bottom" constant="140" id="atq-TR-Cht"/>
                             <constraint firstItem="oq1-VD-vym" firstAttribute="centerX" secondItem="vfY-je-rJA" secondAttribute="centerX" id="c3R-ei-Q0N"/>
                             <constraint firstItem="cCZ-h5-RrX" firstAttribute="centerX" secondItem="vfY-je-rJA" secondAttribute="centerX" id="d16-e3-xXO"/>
                             <constraint firstItem="oq1-VD-vym" firstAttribute="top" secondItem="cCZ-h5-RrX" secondAttribute="bottom" constant="66" id="jfc-5T-Sdx"/>
@@ -118,7 +118,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="itsATie" width="183" height="200"/>
+        <image name="ScissorsCutPaper" width="800" height="600"/>
         <image name="paper" width="75" height="65"/>
         <image name="rock" width="75" height="65"/>
         <image name="scissors" width="75" height="65"/>
